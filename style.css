@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+h1{
+    margin: 0px;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/6;
+    background-color: #0ea5e9;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.sideItems {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sideItems .icon{
+    height: 20px;
+}
+
+#dashboard .icon{
+    height: 40px;
+}
+
+#dashboard .text{
+    font-size: 40px;
+}
+.sideItems .text{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#header {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 30px;
+}
+
+.headerIcon{
+    height: 25px;
+}
+
+#search input{
+    flex: 2 1 auto;
+    border: 0px;
+    background-color: #e2e8f0;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#search, #notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#notification {
+    margin-left: 75px;
+}
+
+#miniProfile{
+    height: 40px;
+    border-radius: 50%;
+}
+
+#bottom {
+    display: flex;
+    grid-column: 1/3;
+}
+
+#greeting {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#profile {
+    border-radius: 50%;
+    grid-column: 1/2;
+    height: 60px;
+    align-self: center;
+}
+
+#greetingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#taskButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.taskbutton {
+    color: white;
+    background-color: #0ea5e9;
+    border: 0px;
+    height: 30px;
+    width: 90px;
+    border-radius: 15px;
+}
+
+#content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    background-color: #e2e8f0;
+    padding: 30px 5px;
+}
+
+#projectCards {
+    flex: 2 1 850px;
+}
+
+#projects {
+    flex: 2 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    border-left: orange 10px solid;
+    background-color: white;
+}
+
+.cardIcons {
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+#rightContent {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex: 1 1 300px;
+    padding-left: 10px;
+    gap: 30px;
+}
+
+#announcements {
+    grid-column: 2/3;
+}
+
+#trending {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.fullProfile {
+    flex: 1 1 auto;
+    display: flex;
+    height: 50px;
+}
